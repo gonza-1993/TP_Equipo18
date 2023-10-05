@@ -1,0 +1,224 @@
+header {
+    background-color: black;
+    color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+    position: fixed;
+    z-index: 100;
+
+}
+
+.nav {
+    color: white;
+    background-color: black;
+    flex-direction: row;
+    display: inline-flex;
+    position: absolute;
+
+}
+
+.home-nav {
+    background-color: black;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1%;
+    font-family: 'Roboto', sans-serif; 
+
+}
+
+
+.home-image:hover{
+    background-color: black;
+    border: solid white 3px;
+    transform: translateX(30%) rotateY(90deg);
+    opacity: 0;
+    transition: 2s;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    position: relative;
+    border: solid black 2px;
+    cursor: pointer;
+
+}
+
+
+
+.container {
+    background-color: black;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+section{
+    width: 100%;
+}
+
+.col {
+    background-color: black;
+    position: relative;
+    display: flex;
+
+}
+
+img {
+    width: 300px;
+    height: 500px;
+
+}
+.row{    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -2px; }
+.menu-toggle{
+    display: none;
+}
+/*  para dispositivos con ancho menor o igual a 768px  */
+@media (max-width: 768px) {
+
+    /*@media asocia un grupo de declaraciones anidadas, en un bloque CSS delimitado por llaves, con una condición definida por un media query */
+    .container {
+        margin-top: auto;
+      }
+      
+    .row {
+        flex-direction: column; 
+        /* Cambia la dirección de flex a columna */
+        align-items: center;
+        height: auto;
+        width: 100%;
+        display: flex;
+
+
+    }
+
+    .col {
+        margin-bottom: 20px;
+        position: relative;
+        width: 100%;
+        display: flexbox;
+        align-items: center;
+        display: flex;
+
+    }
+
+    .home-imager {
+
+        width: 100%;
+        border: solid white 2px;
+        transform: translateX(30%) rotateY(90deg);
+        opacity: 0;
+        transition: 2s;
+        position: relative;
+        border: solid black 2px;
+
+    }
+
+    img {
+        width: 100%;
+        height: 500px;
+    }
+
+
+    /* ESTO ES PARA EL HEADER */
+    .menu-toggle {
+        display: block; /* Muestra el botón de menú en dispositivos móviles */
+        text-align: left;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .home-nav {
+        display: none; /*Oculta el menú horizontal en dispositivos móviles */
+        flex-direction: column; /* Cambia la dirección a vertical */
+        align-items: center;
+        position: relative;
+        background-color: black;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .home-nav:active {
+        display: flex; 
+    }
+
+    .col-title {
+        margin-top: 10px;
+        text-align: center; 
+    }
+
+    header {
+        text-align: left; 
+    }
+    
+}
+
+
+.col-title {
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+
+}
+
+
+.text-image {
+    position: absolute;
+    top: 10px;
+    padding: 30px;
+    color: white;
+
+}
+
+
+body {
+    position: relative;
+    padding-bottom: 10em;
+    min-height: 250vh;
+    /* flex-direction: column; */
+   
+    
+}
+
+.video {
+    width: 100%;
+    height: 350px;
+    position: relative;
+
+}
+
+.video-home {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*ajusta el video al contenedor */
+}
+
+.texto-video-home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 50px;
+}
+
+section {
+    margin-top: 30px;
+}
+
+.rotate {
+    transform: rotateY(180deg); /* Rota la imagen 180 grados en el eje Y */
+  }
