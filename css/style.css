@@ -221,6 +221,7 @@ section {
 
 .rotate {
     transform: rotateY(180deg); /* Rota la imagen 180 grados en el eje Y */
+<<<<<<< HEAD
   }
 
   
@@ -391,3 +392,6 @@ h1 {
 .detalle-lista li {
     margin: 5px 0;
 }
+=======
+  }
+>>>>>>> main
