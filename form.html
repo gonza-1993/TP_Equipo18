@@ -81,6 +81,8 @@
     <h2>Carrito de compras</h2> <!-- Encabezado centrado y estilizado -->
 
         <br>
+
+        <p>Total: <span id="total">$0.00</span></p>
     <section class="product">
         <img src="./Imagenes/Mesas/D.jpeg" alt="Mesa">
         <h2>Mesa</h2>
@@ -156,6 +158,49 @@
         </div>
 
 </div>
+
+<script>
+    // Contador para la cantidad de productos en el carrito
+    let carritoCount = 0;
+  
+    // Función para calcular el descuento en función del número de productos en el carrito
+    function calcularDescuento() {
+      switch (carritoCount) {
+        case 2:
+          return 0.03; // Descuento del 3%
+        case 3:
+          return 0.07; // Descuento del 7%
+        default:
+          return 0.15; // Descuento del 15% para más de 3 productos
+      }
+    }
+  
+    // Función para actualizar el total con el descuento aplicado
+    function actualizarTotal() {
+      const precioUnitario = 200; // Precio unitario de los productos
+      const totalSinDescuento = carritoCount * precioUnitario;
+      const descuento = calcularDescuento();
+      const descuentoAplicado = totalSinDescuento * descuento;
+      const totalConDescuento = totalSinDescuento - descuentoAplicado;
+  
+      // Actualizar el elemento HTML que muestra el total
+      const totalElement = document.getElementById('total');
+      totalElement.textContent = `$${totalConDescuento.toFixed(2)}`;
+    }
+  
+    // Agregar evento click a los botones "Agregar al carrito"
+    const buttons = document.querySelectorAll('.product button');
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        carritoCount++;
+        actualizarTotal();
+      });
+    });
+  </script>
+
+  
+  
+  
 <div class="pie">
     <div>Equipo 18</div>
     <div><img src="./Imagenes/favicon.ico" alt="Favicon"></div>
