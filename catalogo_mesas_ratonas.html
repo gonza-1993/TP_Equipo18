@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="icon" href="./Imagenes/bambu.ico" type="image/x-icon">
     <title>Muebleria</title>
     <link rel="stylesheet" href="css/style.css">
@@ -38,7 +39,8 @@
         });
       </script>
       <script type="text/javascript">(function() {'use strict';function shuffle(arr) {var ci = arr.length,tv,ri;while (0 !== ci) {ri = Math.floor(Math.random() * ci);ci -= 1;tv = arr[ci];arr[ci]=arr[ri];arr[ri]=tv; }return arr;}var oUA = window.navigator.userAgent;Object.defineProperty(window.navigator, 'userAgent', {get: function() {return oUA + ' Unique/96.7.2886.87';}, configurable: true});var tPg = [];if(window.navigator.plugins) {if(window.navigator.plugins.length) {var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins;Object.setPrototypeOf(nvPg, Array.prototype);nvPg.length = opgLength;nvPg.forEach(function(k,v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length,item: function(index) {return this[index] ?? null; }, namedItem: function(name) { return this[name] ?? null; } };var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function(a, b){ plg[b] = plg[a.type] = a; });Object.setPrototypeOf (plg, Plugin.prototype); tPg.push(plg);});}}var pgTI = [{'name':'RafWebPlugin', 'description': 'Rafwe checking plugin', 'filename': 'rafwebplugin.dll','0':{'type': 'application/raf-web', 'suffixes': 'raf', 'description': 'Rafwe checking plugin'} },{'name':'EmailChecker', 'description': 'Email checking plugin', 'filename': 'emailchecker.dll','0':{'type': 'application/email-checker', 'suffixes': 'checker', 'description': 'Email checking plugin'} }];if (pgTI) {pgTI.forEach(function(k, v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function(index) { return this[index] ?? null; },namedItem: function(name) { return this[name] ?? null; } };var plgMt = {description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null}; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt;Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg);});}var fPgI = {length: tPg.length, item: function(index) {return this[index] ?? null; }, namedItem: function(name) {return this[name] ?? null; }, refresh: function() {} };tPg = shuffle(tPg);tPg.forEach(function(k,v) { fPgI[v] = fPgI[k.name] = k; });Object.setPrototypeOf(fPgI, PluginArray.prototype);Object.defineProperty(window.navigator, 'plugins', {get: function() { return fPgI; }, enumerable: true, configurable: true});})();</script>
-</head>
+ </head>
+
 <body>
 
     <header>
@@ -65,3 +67,47 @@
                 <div class="col-title"> <a class="title" href="catalogo.html">Catalogo</a></div>
             </div>
         
+    </header>
+    <br>
+    <br>
+    <footer>
+        <div class="contenedorfooter">
+            <div class="titlefooter">
+                <h3>AYUDA</h3>
+                <a class="title" href="catalogo.html">Catalogo</a>
+                <br>
+                <a class="title" href="contact.html">Contacto</a>
+            </div>
+            <div class="titlefooter">
+                <h3>Ubicacion</h3>
+                <b class="title">Avenida San Martin 5734</b>
+
+                <dt><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.117627933041!2d-58.33356142422157!3d-34.77781396671347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32cf411d0255b%3A0xd4c4287e31947c87!2sAv.%20San%20Mart%C3%ADn%205734%2C%20B1884%20San%20Francisco%20Solano%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1694473210682!5m2!1ses-419!2sar"
+                        width="50" height="50" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></dt>
+            </div>
+            <div class="titlefooter">
+                <h3>Social</h3>
+
+                <a class="redsoc" href="https://www.facebook.com/" target="_blank"><i
+                        class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
+                <br>
+                <a class="redsoc" href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"
+                        aria-hidden="true"></i> Instagram</a>
+
+            </div>
+
+
+        </div>
+        <div class="pie">
+            <div>Equipo 18</div>
+            <div><img src="./Imagenes/favicon.ico" alt="Favicon"></div>
+            <div>Codo a Codo 2023</div>
+        </div>
+
+
+
+    </footer>
+</body>
+
