@@ -206,6 +206,7 @@ h1 {
 }
 
 /* Estilos para los productos */
+
 .product {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -214,10 +215,11 @@ h1 {
     padding: 20px;
     text-align: center;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    
 }
 
 .product img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
 }
 
