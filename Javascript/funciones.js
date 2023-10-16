@@ -9,3 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }, index * 1000); // Cambia el valor de 1000 según la duración de tu animación
     });
 });
+
+
+function agregado_carrito(){
+    alert("Agregado correctamente al carrito")
+}
