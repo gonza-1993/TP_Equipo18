@@ -1,7 +1,4 @@
-<script>
-    // Productos en el catálogo
-    const products = [
-        
+[
     {
         "id":1,
         "precio":200,
@@ -147,45 +144,4 @@
         "precio":100,
         "title": "Mesa de luz Nepal"
     }
-
-    ];
-  
-    // Carrito de compra (inicialmente vacío)
-    const cart = [];
-  
-    // Función para agregar un producto al carrito
-    function addToCart(productId) {
-      const product = products.find((p) => p.id === productId);
-      if (product) {
-        cart.push(product);
-      }
-      updateCart();
-    }
-  
-    // Función para actualizar la visualización del carrito
-    function updateCart() {
-      const cartItems = document.getElementById("cart-items");
-      const cartTotal = document.getElementById("cart-total");
-  
-      cartItems.innerHTML = "";
-      let total = 0;
-  
-      cart.forEach((product) => {
-        const item = document.createElement("li");
-        item.textContent = `${product.title} - $${product.precio}`;
-        cartItems.appendChild(item);
-        total += product.precio;
-      });
-  
-      cartTotal.textContent = total;
-    }
-  
-    // Agregar listeners a los botones "Agregar al carrito"
-    const addToCartButtons = document.querySelectorAll("button[data-id]");
-    addToCartButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const productId = parseInt(button.getAttribute("data-id"));
-        addToCart(productId);
-      });
-    });
-  </script>
+]

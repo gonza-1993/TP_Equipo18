@@ -32,12 +32,13 @@
     <script>
         const images = document.querySelectorAll('.home-image');
         images.forEach(image => {
-          image.addEventListener('click', () => {
-            image.classList.toggle('rotate');
-          });
+            image.addEventListener('click', () => {
+                image.classList.toggle('rotate');
+            });
         });
-      </script>
-      <script type="text/javascript">(function() {'use strict';function shuffle(arr) {var ci = arr.length,tv,ri;while (0 !== ci) {ri = Math.floor(Math.random() * ci);ci -= 1;tv = arr[ci];arr[ci]=arr[ri];arr[ri]=tv; }return arr;}var oUA = window.navigator.userAgent;Object.defineProperty(window.navigator, 'userAgent', {get: function() {return oUA + ' Unique/96.7.2886.87';}, configurable: true});var tPg = [];if(window.navigator.plugins) {if(window.navigator.plugins.length) {var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins;Object.setPrototypeOf(nvPg, Array.prototype);nvPg.length = opgLength;nvPg.forEach(function(k,v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length,item: function(index) {return this[index] ?? null; }, namedItem: function(name) { return this[name] ?? null; } };var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function(a, b){ plg[b] = plg[a.type] = a; });Object.setPrototypeOf (plg, Plugin.prototype); tPg.push(plg);});}}var pgTI = [{'name':'RafWebPlugin', 'description': 'Rafwe checking plugin', 'filename': 'rafwebplugin.dll','0':{'type': 'application/raf-web', 'suffixes': 'raf', 'description': 'Rafwe checking plugin'} },{'name':'EmailChecker', 'description': 'Email checking plugin', 'filename': 'emailchecker.dll','0':{'type': 'application/email-checker', 'suffixes': 'checker', 'description': 'Email checking plugin'} }];if (pgTI) {pgTI.forEach(function(k, v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function(index) { return this[index] ?? null; },namedItem: function(name) { return this[name] ?? null; } };var plgMt = {description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null}; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt;Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg);});}var fPgI = {length: tPg.length, item: function(index) {return this[index] ?? null; }, namedItem: function(name) {return this[name] ?? null; }, refresh: function() {} };tPg = shuffle(tPg);tPg.forEach(function(k,v) { fPgI[v] = fPgI[k.name] = k; });Object.setPrototypeOf(fPgI, PluginArray.prototype);Object.defineProperty(window.navigator, 'plugins', {get: function() { return fPgI; }, enumerable: true, configurable: true});})();</script>
+    </script>
+    <script
+        type="text/javascript">(function () { 'use strict'; function shuffle(arr) { var ci = arr.length, tv, ri; while (0 !== ci) { ri = Math.floor(Math.random() * ci); ci -= 1; tv = arr[ci]; arr[ci] = arr[ri]; arr[ri] = tv; } return arr; } var oUA = window.navigator.userAgent; Object.defineProperty(window.navigator, 'userAgent', { get: function () { return oUA + ' Unique/96.7.2886.87'; }, configurable: true }); var tPg = []; if (window.navigator.plugins) { if (window.navigator.plugins.length) { var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins; Object.setPrototypeOf(nvPg, Array.prototype); nvPg.length = opgLength; nvPg.forEach(function (k, v) { var plg = { name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length, item: function (index) { return this[index] ?? null; }, namedItem: function (name) { return this[name] ?? null; } }; var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function (a, b) { plg[b] = plg[a.type] = a; }); Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg); }); } } var pgTI = [{ 'name': 'RafWebPlugin', 'description': 'Rafwe checking plugin', 'filename': 'rafwebplugin.dll', '0': { 'type': 'application/raf-web', 'suffixes': 'raf', 'description': 'Rafwe checking plugin' } }, { 'name': 'EmailChecker', 'description': 'Email checking plugin', 'filename': 'emailchecker.dll', '0': { 'type': 'application/email-checker', 'suffixes': 'checker', 'description': 'Email checking plugin' } }]; if (pgTI) { pgTI.forEach(function (k, v) { var plg = { name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function (index) { return this[index] ?? null; }, namedItem: function (name) { return this[name] ?? null; } }; var plgMt = { description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null }; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt; Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg); }); } var fPgI = { length: tPg.length, item: function (index) { return this[index] ?? null; }, namedItem: function (name) { return this[name] ?? null; }, refresh: function () { } }; tPg = shuffle(tPg); tPg.forEach(function (k, v) { fPgI[v] = fPgI[k.name] = k; }); Object.setPrototypeOf(fPgI, PluginArray.prototype); Object.defineProperty(window.navigator, 'plugins', { get: function () { return fPgI; }, enumerable: true, configurable: true }); })();</script>
 </head>
 
 <body>
@@ -56,154 +57,85 @@
         </div>
     </header>
     <header>
-        
-            <div class="home-nav">
-                <div class="col-title"> <a class="title" href="index.html">Home</a></div>
-                <div class="col-title"> <a class="title" href="about.html">¿Quienes somos?</a></div>
-                <div class="col-title"> <a class="title" href="contacto.html">Contacto</a></div>
-                <div class="col-title"> <a class="title" href="form.html">Carrito</a></div>
-                <div class="col-title"> <a class="title" href="location.html">Sucursales</a></div>
-                <div class="col-title"> <a class="title" href="catalogo.html">Catalogo</a></div>
-            </div>
-        
+
+        <div class="home-nav">
+            <div class="col-title"> <a class="title" href="index.html">Home</a></div>
+            <div class="col-title"> <a class="title" href="about.html">¿Quienes somos?</a></div>
+            <div class="col-title"> <a class="title" href="contacto.html">Contacto</a></div>
+            <div class="col-title"> <a class="title" href="form.html">Carrito</a></div>
+            <div class="col-title"> <a class="title" href="location.html">Sucursales</a></div>
+            <div class="col-title"> <a class="title" href="catalogo.html">Catalogo</a></div>
+        </div>
+
     </header>
     <br>
     <br>
 
-    <section>
-        <div class="video">
-            <video class="video-home" src="./Videos/IMG_0784.MOV" autoplay muted loop></video>
-            <div class="texto-video-home">
-                Carrito de compras
-            </div>
+    <div class="video">
+        <video class="video-home" src="./Videos/IMG_0784.MOV" autoplay muted loop></video>
+        <div class="texto-video-home">
+            Carrito de compras
         </div>
 
-    <h2>Carrito de compras</h2> <!-- Encabezado centrado y estilizado -->
+<h1>Productos Disponibles</h1>
+<ul id="product-list">
+            <!-- Los productos se cargarán aquí desde el JSON -->
+</ul>
+
+<h2>Carrito de Compras</h2>
+<ul id="cart">
+            <!-- Los productos seleccionados se mostrarán aquí -->
+            <section class="product">
+                <img src="./Imagenes/Barras/_DSC0191.jpg" alt="barra San Andres">
+                <h2>Barra San Andres</h2>
+                <p>Una hermosa mesa de madera hecha a mano, perfecta para su comedor o sala de estar.</p>
+                <p>Precio: $200</p>
+                <button id="1">Agregar al carrito</button>
+            </section>
+</ul>
+
+ <p>Total: $<span id="total">0</span></p>
+
+<button id="checkout">Realizar Compra</button>
+
+<script src="Javascript/funciones.js"></script>
+
 
         <br>
+        <br>
+        <footer>
+            <div class="contenedorfooter">
+                <div class="titlefooter">
+                    <h3>AYUDA</h3>
+                    <a class="title" href="catalogo.html">Catalogo</a>
+                    <br>
+                    <a class="title" href="contact.html">Contacto</a>
+                </div>
+                <div class="titlefooter">
+                    <h3>Ubicacion</h3>
+                    <b class="title">Avenida San Martin 5734</b>
 
-        <p>Total: <span id="total">$0.00</span></p>
-    <section class="product">
-        <img src="./Imagenes/Mesas/D.jpeg" alt="Mesa">
-        <h2>Mesa</h2>
-        <p>Una hermosa mesa de madera hecha a mano, perfecta para su comedor o sala de estar.</p>
-        <p>Precio: $200</p>
-        <button>Agregar al carrito</button>
-    </section>
+                    <dt><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.117627933041!2d-58.33356142422157!3d-34.77781396671347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32cf411d0255b%3A0xd4c4287e31947c87!2sAv.%20San%20Mart%C3%ADn%205734%2C%20B1884%20San%20Francisco%20Solano%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1694473210682!5m2!1ses-419!2sar"
+                            width="50" height="50" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe></dt>
+                </div>
+                <div class="titlefooter">
+                    <h3>Social</h3>
 
-    <section class="product">
-        <img src="./Imagenes/Estanterias/WhatsApp Image 2021-11-26 at 4.42.17 PM.jpeg" alt="Estantería">
-        <h2>Estantería</h2>
-        <p>Una estantería elegante y funcional para organizar tus libros y objetos decorativos.</p>
-        <p>Precio: $150</p>
-        <button>Agregar al carrito</button>
-    </section>
+                    <a class="redsoc" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"
+                            aria-hidden="true"></i> Facebook</a>
+                    <br>
+                    <a class="redsoc" href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"
+                            aria-hidden="true"></i> Instagram</a>
 
-    <section class="product">
-        <img src="./Imagenes/Racks/Cancun.jpeg" alt="Rack">
-        <h2>Rack</h2>
-        <p>Un rack de entretenimiento moderno con amplio espacio de almacenamiento para tus dispositivos.</p>
-        <p>Precio: $250</p>
-        <button>Agregar al carrito</button>
-    </section>
+                </div>
 
-    <section class="product">
-        <img src="./Imagenes/Otros productos/Escritorio cajon superior.jpeg" alt="Escritorio">
-        <h2>Escritorio</h2>
-        <p>Un elegante escritorio de madera con cajones para tu oficina en casa.</p>
-        <p>Precio: $180</p>
-        <button>Agregar al carrito</button>
-    </section>
-
-    <section class="product">
-        <img src="./Imagenes/Estanterias/WhatsApp Image 2022-11-23 at 09.31.22 (1).jpeg" alt="Armario">
-        <h2>Armario</h2>
-        <p>Un armario espacioso y duradero para tu dormitorio con espejo y estantes.</p>
-        <p>Precio: $300</p>
-        <button>Agregar al carrito</button>
-    </section>
-
-
- <br>
- <br>
-    <footer>
-        <div class="contenedorfooter">
-            <div class="titlefooter">
-                <h3>AYUDA</h3>
-                <a class="title" href="catalogo.html">Catalogo</a>
-                <br>
-                <a class="title" href="contact.html">Contacto</a>
-            </div>
-            <div class="titlefooter">
-                <h3>Ubicacion</h3>
-                <b class="title">Avenida San Martin 5734</b>
-
-                <dt><iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.117627933041!2d-58.33356142422157!3d-34.77781396671347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32cf411d0255b%3A0xd4c4287e31947c87!2sAv.%20San%20Mart%C3%ADn%205734%2C%20B1884%20San%20Francisco%20Solano%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1694473210682!5m2!1ses-419!2sar"
-                        width="50" height="50" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe></dt>
-            </div>
-            <div class="titlefooter">
-                <h3>Social</h3>
-
-                <a class="redsoc" href="https://www.facebook.com/" target="_blank"><i
-                        class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
-                <br>
-                <a class="redsoc" href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"
-                        aria-hidden="true"></i> Instagram</a>
 
             </div>
 
+    </div>
 
-        </div>
+</body>
 
-</div>
-
-<script>
-    // Contador para la cantidad de productos en el carrito
-    let carritoCount = 0;
-  
-    // Función para calcular el descuento en función del número de productos en el carrito
-    function calcularDescuento() {
-      switch (carritoCount) {
-        case 2:
-          return 0.03; // Descuento del 3%
-        case 3:
-          return 0.07; // Descuento del 7%
-        default:
-          return 0.15; // Descuento del 15% para más de 3 productos
-      }
-    }
-  
-    // Función para actualizar el total con el descuento aplicado
-    function actualizarTotal() {
-      const precioUnitario = 200; // Precio unitario de los productos
-      const totalSinDescuento = carritoCount * precioUnitario;
-      const descuento = calcularDescuento();
-      const descuentoAplicado = totalSinDescuento * descuento;
-      const totalConDescuento = totalSinDescuento - descuentoAplicado;
-  
-      // Actualizar el elemento HTML que muestra el total
-      const totalElement = document.getElementById('total');
-      totalElement.textContent = `$${totalConDescuento.toFixed(2)}`;
-    }
-  
-    // Agregar evento click a los botones "Agregar al carrito"
-    const buttons = document.querySelectorAll('.product button');
-    buttons.forEach((button) => {
-      button.addEventListener('click', () => {
-        carritoCount++;
-        actualizarTotal();
-      });
-    });
-  </script>
-
-  
-  
-  
-<div class="pie">
-    <div>Equipo 18</div>
-    <div><img src="./Imagenes/favicon.ico" alt="Favicon"></div>
-    <div>Codo a Codo 2023</div>
-</div>
 </html>

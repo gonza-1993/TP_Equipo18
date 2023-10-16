@@ -405,3 +405,18 @@ h1 {
   figure.hover figcaption {
       transform: rotateY(0);
   }
+  .cart {
+    position: fixed;
+    top: 60px; /* Altura del header + espacio deseado */
+    right: 20px;
+    color: white;
+    background-color:grey;
+    border: 1px solid #000000;
+    padding: 10px;
+    opacity: 0,5;
+    width: 200px; /* Ancho deseado */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  .cart button {
+    display: block;
+  }
