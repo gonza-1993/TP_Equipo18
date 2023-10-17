@@ -118,7 +118,7 @@
 <h2>Rack de Tv London</h2>
 <p>Una hermosa mesa de madera hecha a mano, perfecta para su comedor o sala de estar.</p>
 <p>Precio: $200</p>
-<button>Agregar al carrito</button>
+<button data-id="8">Agregar al carrito</button>
 </section>
 
 <section class="product">
@@ -126,7 +126,7 @@
 <h2>Rack de Tv Industrial/h2>
 <p>Una estantería elegante y funcional para organizar tus libros y objetos decorativos.</p>
 <p>Precio: $150</p>
-<button>Agregar al carrito</button>
+<button data-id="9">Agregar al carrito</button>
 </section>
 
 <section class="product">
@@ -134,7 +134,7 @@
 <h2>Rack de Tv Tokio</h2>
 <p>Un rack de entretenimiento moderno con amplio espacio de almacenamiento para tus dispositivos.</p>
 <p>Precio: $100</p>
-<button>Agregar al carrito</button>
+<button data-id="10">Agregar al carrito</button>
 </section>
 
 <section class="product">
@@ -142,11 +142,107 @@
 <h2>Rack de Tv Cancun</h2>
 <p>Un elegante escritorio de madera con cajones para tu oficina en casa.</p>
 <p>Precio: $180</p>
-<button>Agregar al carrito</button>
+<button data-id="11">Agregar al carrito</button>
 </section>
 <br>
 <script> src="https://unpkg.com/vue@3/dist/vue.global.js"</script>
 <script src="https://unpkg.com/vue@3"></script>
+
+</body>
+<div class="carrito">
+    <!-- Para el carrito -->
+    <section id="cart" class="cart">
+        <h2>Carrito</h2>
+        <ul id="cart-items"> 
+            <!-- para los productos del carrito -->
+        </ul>
+        <p>Total: $<span id="cart-total">0</span></p>
+        <button><span id="checkout-button">Comprar</span></button>
+    </section>
+    </div>
+    
+<script>
+    // Productos en el catálogo de esta pagina
+    const products = [
+    {
+        "id":8,
+        "precio":200,
+        "title": "Rack de Tv London"
+    },
+    {
+        "id":9,
+        "precio":150,
+        "title": "Rack de Tv Industrial"
+    },
+    {
+        "id":10,
+        "precio":100,
+        "title": "Rack de Tv Tokio"
+    },
+    {
+        "id":11,
+        "precio":180,
+        "title": "Rack de Tv Cancul"
+    }
+        
+    ];
+
+    // Carrito de compra 
+    const cart = [];
+
+    // agregar un producto al carrito
+    function addToCart(productId) {
+        const product = products.find((p) => p.id === productId);
+        if (product) {
+            cart.push(product);
+        }
+        updateCart();
+    }
+
+    // actualizar el carrito carrito
+    function updateCart() {
+        const cartItems = document.getElementById("cart-items");
+        const cartTotal = document.getElementById("cart-total");
+        const checkoutButton = document.getElementById("checkout-button");
+
+        cartItems.innerHTML = "";
+        let total = 0;
+
+        cart.forEach((product, index) => {
+            const item = document.createElement("li");
+            item.textContent = `${product.title} - $${product.precio}`;
+            const deleteButton = document.createElement("button");
+            deleteButton.textContent = "Eliminar";
+            deleteButton.addEventListener("click", () => {
+                cart.splice(index, 1);
+                updateCart();
+            });
+            item.appendChild(deleteButton);
+            cartItems.appendChild(item);
+            total += product.precio;
+        });
+
+        cartTotal.textContent = total;
+    }
+
+    // "Agregar al carrito"
+    const addToCartButtons = document.querySelectorAll("button[data-id]");
+    addToCartButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            const productId = parseInt(button.getAttribute("data-id"));
+            addToCart(productId);
+        });
+    });
+
+    // Botón "Realizar Compra"
+    const checkoutButton = document.getElementById("checkout-button");
+    checkoutButton.addEventListener("click", () => {
+        alert("Compra realizada con éxito");
+        cart.length = 0; 
+        updateCart();
+    });
+
+</script>
 
 </body>
 

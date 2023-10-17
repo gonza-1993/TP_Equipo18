@@ -115,7 +115,7 @@ header {
     header {
         text-align: left; 
     }
-    
+   
 }
 
 
@@ -180,26 +180,24 @@ section {
 
 /* Style para ABOUT*/
 .about {
-    max-width: 800px; /* Limita el ancho del contenido para facilitar la lectura */
-    margin: 0 auto; /* Centra el contenido horizontalmente */
-    padding: 20px; /* Agrega espacio alrededor del contenido */
-    text-align: justify; /* Justifica el texto para una mejor legibilidad */
-    font-family: 'Roboto', sans-serif; /* Utiliza la fuente Roboto o la que desees */
-    font-size: 16px; /* Tamaño de fuente base */
-    line-height: 1.6; /* Espaciado entre líneas para facilitar la lectura */
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    text-align: justify; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px; 
+    line-height: 1.6; 
 }
 
 h1 {
-    font-size: 28px; /* Tamaño de fuente más grande para el título */
-    text-align: center; /* Centra el título horizontalmente */
-    margin-bottom: 20px; /* Agrega espacio después del título */
+    font-size: 28px; 
+    text-align: center; 
+    margin-bottom: 20px; 
 }
 
 p {
-    margin-bottom: 15px; /* Agrega espacio después de los párrafos en about*/
+    margin-bottom: 15px; 
 }
-
-/* STYLE PARA FORM*/
 
 h1 {
     margin: 0;
@@ -244,63 +242,6 @@ h1 {
 
 .product button:hover {
     background-color: #555;
-}
-
-/* Estilos para el carrito de compra */
-.cart {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-
-.cart h2 {
-    font-size: 1.5em;
-}
-
-.cart table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-
-.cart th, .cart td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-.cart th {
-    background-color: #333;
-    color: white;
-}
-
-.cart button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.cart button:hover {
-    background-color: #555;
-}
-
-/* Estilo para el encabezado "Carrito de compras" */
-h2 {
- text-align: center; /* Centra el texto horizontalmente */
-    
-   
- font-size: 24px; /* Tamaño de fuente */
-    
-   
- color: #333; /* Color del texto */
- margin-top: 20px; /* Espacio superior */
 }
 
 /* Estilo para catalogo" */
@@ -407,16 +348,20 @@ h1 {
   }
   .cart {
     position: fixed;
-    top: 60px; /* Altura del header + espacio deseado */
+    top: 60px; 
     right: 20px;
     color: white;
-    background-color:grey;
+    background-color:gray;
     border: 1px solid #000000;
     padding: 10px;
     opacity: 0,5;
-    width: 200px; /* Ancho deseado */
+    width: 200px; 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
   }
   .cart button {
     display: block;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
   }
