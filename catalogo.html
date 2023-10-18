@@ -42,13 +42,12 @@
 <body>
 
     <header>
-        <div class="menu-toggle">
+        <div class="menu-toggle" id="menu-toggle">
             <i class="fas fa-bars"></i>
             <div class="home-nav">
                 <div class="col-title"> <a class="title" href="index.html">Home</a></div>
                 <div class="col-title"> <a class="title" href="about.html">¿Quienes somos?</a></div>
                 <div class="col-title"> <a class="title" href="contacto.html">Contacto</a></div>
-                <div class="col-title"> <a class="title" href="form.html">Carrito</a></div>
                 <div class="col-title"> <a class="title" href="location.html">Sucursales</a></div>
                 <div class="col-title"> <a class="title" href="catalogo.html">Catalogo</a></div>
             </div>
@@ -60,7 +59,6 @@
                 <div class="col-title"> <a class="title" href="index.html">Home</a></div>
                 <div class="col-title"> <a class="title" href="about.html">¿Quienes somos?</a></div>
                 <div class="col-title"> <a class="title" href="contacto.html">Contacto</a></div>
-                <div class="col-title"> <a class="title" href="form.html">Carrito</a></div>
                 <div class="col-title"> <a class="title" href="location.html">Sucursales</a></div>
                 <div class="col-title"> <a class="title" href="catalogo.html">Catalogo</a></div>
             </div>
@@ -129,6 +127,23 @@
     <div><img src="./Imagenes/favicon.ico" alt="Favicon"></div>
     <div>Codo a Codo 2023</div>
 </div>
+<script>
+    // Menu chico
+    document.addEventListener("DOMContentLoaded", function () {
+    var menuToggle = document.getElementById("menu-toggle");
+  
+    var homeNav = document.querySelector(".home-nav");
+  
+    menuToggle.addEventListener("click", function () {
+      if (homeNav.style.display === "block") {
+        homeNav.style.display = "none";
+      } else {
+        homeNav.style.display = "block";
+      }
+    });
+  });
+  
+      </script>
 </body>
 </html>
 
